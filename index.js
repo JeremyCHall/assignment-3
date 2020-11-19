@@ -7,7 +7,7 @@
  * Example Output: "hello world"
  */
 
-console.log('hello world')
+console.log("hello world");
 
 /* Challenge #1
  * Create a variable and print the value
@@ -20,6 +20,8 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
+let x=5;
+console.log(x);
 
 /* Challenge #2
  * Create variables for your first and last name then print your full name
@@ -33,7 +35,9 @@ console.log('hello world')
  */
 
 // TODO: ADD CODE HERE
-
+const firstName="Jeremy";
+const lastName="Hall";
+console.log(firstName," ",lastName);
 /* Challenge #3
  * Calculate the total price rounded to two decimals
  *
