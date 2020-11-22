@@ -7,7 +7,7 @@
  * Example Output: "hello world"
  */
 
-console.log("hello world");
+console.log("Hello, world!");
 
 /* Challenge #1
  * Create a variable and print the value
@@ -37,7 +37,7 @@ console.log(x);
 // TODO: ADD CODE HERE
 const firstName="Jeremy";
 const lastName="Hall";
-console.log(firstName," ",lastName);
+console.log(firstName + " " + lastName);
 /* Challenge #3
  * Calculate the total price rounded to two decimals
  *
@@ -51,6 +51,10 @@ console.log(firstName," ",lastName);
  */
 
 // TODO: ADD CODE HERE
+let price=9.98;
+let quantity=5;
+let total=price*quantity;
+console.log(total.toFixed(2));
 
 /* Challenge #4
  * Declare a variable and conditionally assign it a value
@@ -67,7 +71,15 @@ console.log(firstName," ",lastName);
  */
 
 // TODO: ADD CODE HERE
-
+let weather="Rainy";
+let message;
+if (weather==="Sunny"){
+    message="Yay!  It's sunny outside"
+}
+else{
+    message="Aww! It's not sunny outside"
+}
+console.log(message);
 /* Challenge #5
  * Create a function that returns any string
  *
@@ -80,7 +92,10 @@ console.log(firstName," ",lastName);
  */
 
 // TODO: ADD CODE HERE
-
+function myFunction(){
+    return "I called a function!"
+}
+console.log(myFunction());
 /* Challenge #6
  * Rewrite the function in Challenge #5 as an arrow function
  *
@@ -93,7 +108,10 @@ console.log(firstName," ",lastName);
  */
 
 // TODO: ADD CODE HERE
-
+let myArrowFunction=()=>{
+    return "I don't like arrows"
+}
+console.log (myArrowFunction());
 /* Challenge #7
  * Create a function that accepts a string argument and returns it in all uppercase
  *
@@ -107,6 +125,11 @@ console.log(firstName," ",lastName);
  */
 
 // TODO: ADD CODE HERE
+function stringToUpper(str){
+    return str.toUpperCase();
+}
+var result=stringToUpper("capslock");
+console.log (result);
 
 /* Challenge #8
  * Create a function that accepts a number argument and returns double its value
@@ -124,4 +147,14 @@ console.log(firstName," ",lastName);
  */
 
 // TODO: ADD CODE HERE
-var konEdit = 123123;
+function multiplyByTwo(number){
+return number*2;
+}
+let num1=multiplyByTwo(1);
+let num2=multiplyByTwo(5);
+let num3=multiplyByTwo(10);
+
+
+console.log(num1);
+console.log(num2);
+console.log(num3);
